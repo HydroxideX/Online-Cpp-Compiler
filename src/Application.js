@@ -17,7 +17,6 @@ class Application extends React.Component {
       <ButtonsBar />
       <MainArea></MainArea>
       <InteractiveInput />
-
       </React.Fragment>
     );
   }

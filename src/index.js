@@ -29,6 +29,6 @@ class SideBar extends React.Component {
 
 
 ReactDOM.render(
-  <SideBar />,
+  <Application />,
   document.getElementById('root')
 );
