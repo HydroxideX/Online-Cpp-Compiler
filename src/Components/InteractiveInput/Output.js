@@ -8,7 +8,7 @@ class Output extends React.Component {
 
   render() {
     return (
-      <textarea />
+      <textarea class = "output" />
     );
   }
 }

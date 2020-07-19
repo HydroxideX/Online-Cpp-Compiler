@@ -13,11 +13,11 @@ class Input extends React.Component {
 
   render() {
     return (
-      <div class = "horizontal">
-      <input/>
-      <button onClick={this.handleClick}>
-        Run
-      </button>
+      <div >
+        <input className = "input"/>
+        <button onClick={this.handleClick}>
+          Run
+        </button>
       </div>
     );
   }

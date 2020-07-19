@@ -13,11 +13,11 @@ class Application extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className = 'application'>
       <ButtonsBar />
       <MainArea></MainArea>
       <InteractiveInput />
-      </React.Fragment>
+      </div>
     );
   }
 }
