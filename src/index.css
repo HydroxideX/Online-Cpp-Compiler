@@ -5,3 +5,24 @@
 .horizontal {
     display: flex;
 }
+
+
+.sidebar {
+    position: fixed;
+    bottom: 40%;
+    width: 100%;
+    transition: bottom .3s ease-in-out;
+}
+.sidebar-toggle {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sidebar-open {
+  position: fixed;
+  bottom: -40%;
+  width: 100%;
+  transition: bottom .3s ease-in-out;
+  background-color: red;
+}

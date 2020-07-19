@@ -12,13 +12,16 @@ class Application extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
       <ButtonsBar />
       //AddMainAreaWhenComplete
       <InteractiveInput />
-      </div>
+
+      </React.Fragment>
     );
   }
 }
+
+
 
 export default Application
