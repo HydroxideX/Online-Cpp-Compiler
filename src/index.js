@@ -1,34 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Welcome from './Components/ButtonsBar/RunButton.js'
+import ButtonsBar from './Components/ButtonsBar/ButtonsBar'
 
-
-
-/*class RunButton extends React.Component {
-  constructor (props) {
-
-  }
-
-  handleClick() {
-
-  }
-}
-
-class RunButton extends React.Component {
-  constructor (props) {
-
-  }
-
-  handleClick() {
-
-  }
-}
-*/
 
 
 
 ReactDOM.render(
-  <Welcome />,
+  <ButtonsBar />,
   document.getElementById('root')
 );
