@@ -1,3 +1,7 @@
 .Buttons {
     display: flex;
 }
+
+.horizontal {
+    display: flex;
+}

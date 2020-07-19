@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ButtonsBar from './Components/ButtonsBar/ButtonsBar'
-
+import Application from './Application.js'
 
 
 
 ReactDOM.render(
-  <ButtonsBar />,
+  <Application />,
   document.getElementById('root')
 );
