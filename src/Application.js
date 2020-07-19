@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ButtonsBar from './Components/ButtonsBar/ButtonsBar.js'
 import InteractiveInput from './Components/InteractiveInput/InteractiveInput.js'
+import MainArea from './Components/MainArea/MainArea.js'
 
 
 class Application extends React.Component {
@@ -14,7 +15,7 @@ class Application extends React.Component {
     return (
       <div>
       <ButtonsBar />
-      //AddMainAreaWhenComplete
+      <MainArea></MainArea>
       <InteractiveInput />
       </div>
     );
