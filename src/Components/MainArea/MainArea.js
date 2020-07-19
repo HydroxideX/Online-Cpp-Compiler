@@ -6,7 +6,7 @@ class MainArea extends Component {
   render() {
     return (
       <div>
-        <AceEditor mode="javascript" theme="monokai" />
+        <AceEditor mode="javascript" theme="monokai" zzz/>
       </div>
     );
   }

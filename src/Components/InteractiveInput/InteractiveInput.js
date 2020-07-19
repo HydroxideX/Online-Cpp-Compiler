@@ -16,11 +16,14 @@ class InteractiveInput extends React.Component {
   render() {
     var sidebarClass = this.state.sidebarOpen ? 'sidebar-open' : 'sidebar';
     return (
+      <React.Fragment>
+      <button onClick={this.handleViewSidebar} className = "sidebar-toggle">Input and Output</button>
       <div className={sidebarClass}>
-        <button onClick={this.handleViewSidebar} className = "sidebar-toggle">Input and Output</button>
+
         <Input />
         <Output />
       </div>
+      </React.Fragment>
     )
   }
 }

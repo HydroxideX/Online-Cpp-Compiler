@@ -14,9 +14,9 @@ class Application extends React.Component {
   render() {
     return (
       <div className = 'application'>
-      <ButtonsBar />
-      <MainArea></MainArea>
-      <InteractiveInput />
+        <ButtonsBar />
+        <MainArea></MainArea>
+        <InteractiveInput />
       </div>
     );
   }

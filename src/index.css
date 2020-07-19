@@ -23,6 +23,10 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     margin-left: 5%;
 }
 
+.body {
+  height: 100%;
+}
+
 .application {
     background: black;
     width: 100%;
@@ -30,19 +34,19 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     padding: 0;
     margin: 0;
     border: none;
+
 }
+
 .output {
     width: 88.5%;
     margin-left: 5%;
     height: 68%;
+
 }
 
 .sidebar {
-    position: fixed;
-    bottom: -100%;
-    width: 100%;
-    transition: bottom .3s ease-in-out;
-    z-index: 5;
+    display: none;
+
 }
 
 .sidebar-toggle {
@@ -57,9 +61,11 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     border-radius: 50%;
     position: fixed;
     left: 40%;
-    bottom: 0;
-    z-index: 5;
+    bottom:0;
+    z-index: 6;
 }
+
+
 
 .sidebar-open {
   position: fixed;
@@ -68,4 +74,5 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   width: 100%;
   transition: bottom .3s ease-in-out;
   z-index: 5;
+
 }
