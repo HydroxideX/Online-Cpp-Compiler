@@ -5,8 +5,32 @@
 .horizontal {
     display: flex;
 }
+<<<<<<< HEAD
 .editor {
     position: absolute;
     width: 1000px;
     height: 400px;
 }
+=======
+
+
+.sidebar {
+    position: fixed;
+    bottom: 40%;
+    width: 100%;
+    transition: bottom .3s ease-in-out;
+}
+.sidebar-toggle {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sidebar-open {
+  position: fixed;
+  bottom: -40%;
+  width: 100%;
+  transition: bottom .3s ease-in-out;
+  background-color: red;
+}
+>>>>>>> fec9922f95ff4dcb8765969aa3eeafd8b0d53446
