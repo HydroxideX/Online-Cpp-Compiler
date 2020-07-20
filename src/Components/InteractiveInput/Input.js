@@ -15,7 +15,7 @@ class Input extends React.Component {
     return (
       <div >
         <input className = "input"/>
-        <button onClick={this.handleClick}>
+        <button onClick={this.handleClick} className = "run-button">
           Run
         </button>
       </div>
