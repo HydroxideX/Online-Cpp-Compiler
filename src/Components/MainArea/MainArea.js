@@ -9,10 +9,12 @@ class MainArea extends Component {
         style={{
           border: "2px solid red",
           marginLeft:"100px",
-          marginRight:"100px"
+          marginRight:"100px",
+          height:"100vh"
+
         }}
       >
-        <AceEditor width="100%" fontSize="14pt" mode="c_cpp" theme="solarized_dark" showPrintMargin={false} zzz />
+        <AceEditor width="100%" height="100vh" fontSize="14pt" mode="c_cpp" theme="solarized_dark" showPrintMargin={false} zzz />
       </div>
     );
   }
