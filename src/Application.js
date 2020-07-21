@@ -9,13 +9,20 @@ import MainArea from './Components/MainArea/MainArea.js'
 class Application extends React.Component {
   constructor(props) {
     super(props);
+    this.state={
+      code:""
+    }
   }
-
+  handler = (val) => {
+    this.setState({
+      code: val
+    })
+  }
   render() {
     return (
       <div className = 'application'>
         <ButtonsBar />
-        <MainArea></MainArea>
+        <MainArea handler = {this.handler}></MainArea>
         <InteractiveInput />
       </div>
     );
