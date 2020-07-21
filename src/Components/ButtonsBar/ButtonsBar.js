@@ -12,10 +12,10 @@ class ButtonsBar extends React.Component {
   render() {
     return (
       <div class = "Buttons">
-      <Compile />
-      <Run />
-      <Save />
-      <Stop />
+      <Compile onCompile = {this.props.buttonFunctions['onCompile']} />
+      <Run onRun = {this.props.buttonFunctions['onRun']} />
+      <Save onSave = {this.props.buttonFunctions['onSave']} />
+      <Stop onStop = {this.props.buttonFunctions['onStop']} />
       </div>
     )
   }

@@ -5,11 +5,7 @@ class Save extends React.Component {
 
   constructor (props) {
     super(props);
-    this.handleClick= this.handleClick.bind(this);
-  }
-
-  handleClick(){
-    alert('Nom NUM nom num nom');
+    this.handleClick= this.props.onSave.bind(this);
   }
 
   render() {

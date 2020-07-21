@@ -20,8 +20,8 @@ class InteractiveInput extends React.Component {
       <button onClick={this.handleViewSidebar} className = "sidebar-toggle">Input and Output</button>
       <div className={sidebarClass}>
 
-        <Input />
-        <Output />
+        <Input stopClearing = {this.props.stopClearing} clearInput = {this.props.clearInput} onEnter = {this.props.onEnter}/>
+        <Output output = {this.props.output}/>
       </div>
       </React.Fragment>
     )

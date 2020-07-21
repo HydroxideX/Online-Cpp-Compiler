@@ -4,12 +4,9 @@ import React from 'react';
 class Stop extends React.Component {
   constructor (props) {
     super(props);
-    this.handleClick= this.handleClick.bind(this);
+    this.handleClick= this.props.onStop.bind(this);
   }
 
-  handleClick(){
-    alert('Hmmmmmmmmm');
-  }
 
   render() {
     return (

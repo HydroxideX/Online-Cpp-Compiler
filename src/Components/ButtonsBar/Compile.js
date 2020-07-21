@@ -4,11 +4,7 @@ class Compile extends React.Component {
 
   constructor (props) {
     super(props);
-    this.handleClick= this.handleClick.bind(this);
-  }
-
-  handleClick(){
-    alert('WHY DID YOU CLICK ME WHYYYYYYYYY');
+    this.handleClick= this.props.onCompile.bind(this);
   }
 
   render() {

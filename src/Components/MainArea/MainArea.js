@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AceEditor from "react-ace";
 import "brace/mode/c_cpp";
 import "brace/theme/solarized_dark";
+
 class MainArea extends Component {
   constructor(props) {
     super(props);

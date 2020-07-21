@@ -4,12 +4,9 @@ class Run extends React.Component {
 
   constructor (props) {
     super(props);
-    this.handleClick= this.handleClick.bind(this);
+    this.handleClick= this.props.onRun.bind(this);
   }
 
-  handleClick(){
-    alert('Sh3rawy is EVIL');
-  }
 
   render() {
     return (
