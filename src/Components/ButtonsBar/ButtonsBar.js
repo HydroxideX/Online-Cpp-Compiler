@@ -5,9 +5,7 @@ import Save from './Save.js'
 import Stop from './Stop.js'
 
 class ButtonsBar extends React.Component {
-  constructor (props) {
-    super(props);
-  }
+
 
   render() {
     return (

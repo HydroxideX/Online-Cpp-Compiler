@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import AceEditor from "react-ace";
 import "brace/mode/c_cpp";
 import "brace/theme/solarized_dark";
+import 'brace/snippets/c_cpp';
+import 'brace/ext/language_tools';
 
 class MainArea extends Component {
   constructor(props) {
@@ -36,6 +38,15 @@ class MainArea extends Component {
           theme="solarized_dark"
           showPrintMargin={false}
           onChange={this.updateData}
+          showGutter={true}
+          highlightActiveLine={true}
+          setOptions={{
+            enableBasicAutocompletion: true,
+            enableLiveAutocompletion: true,
+            enableSnippets: true,
+            showLineNumbers: true,
+            tabSize: 2
+          }}
           zzz
         />
       </div>
