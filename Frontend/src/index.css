@@ -80,12 +80,6 @@ video {
 }
 html {
     background: #00737f;
-<<<<<<< HEAD:Frontend/src/index.css
-}
-
-
-=======
-
 }
 .input {
   width: 82.7%;
@@ -97,7 +91,6 @@ html {
   background: #00737f;
 
 }
->>>>>>> 8544fbe014e992ecb4fdbeacd89e6982845f209e:src/index.css
 
 .application {
   background: #00737f;
@@ -120,15 +113,7 @@ html {
   width: 87.8%;
   margin-left: 6.1%;
   height: 50%;
-=======
-.run-button {
-  width: 5.1%;
-}
-.output {
-  width: 87.8%;
-  margin-left: 5%;
-  height: 68%;
->>>>>>> 8544fbe014e992ecb4fdbeacd89e6982845f209e:src/index.css
+
 }
 
 .sidebar {

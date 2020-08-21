@@ -11,9 +11,8 @@ using namespace std;
 
 int main()
 {
-    cout<<"Hello World!\n";
-    int n,m;
-    cin>>n>>m;
-    cout<<n<<"\n"<<m<<"\n";
-    return 0;
+    int n;
+    while(true){
+      n = 3;
+    }
 }

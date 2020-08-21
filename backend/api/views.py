@@ -9,6 +9,9 @@ import subprocess
 from subprocess import PIPE
 from subprocess import Popen
 import os
+from Timeout import timeout
+
+
 
 @api_view(['POST'])
 def code(request):
@@ -33,6 +36,7 @@ def input(request):
 
 
 @api_view(['GET'])
+@timeout(10)
 def output(request):
     name = os.path.dirname(os.path.abspath(__file__)) +"/object-files/a"+str(randrange(1000)) + ".out"
     try:
