@@ -1,10 +1,4 @@
-.Buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #00737f;
-  margin-top: 0.5%;
-}
+
 
 html,
 body,
@@ -81,9 +75,14 @@ video {
 html {
     background: #00737f;
 }
-.input {
-  width: 82.7%;
-  margin-left: 5%;
+
+.Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00737f;
+  margin-top: 0.5%;
+  font-size: 150%;
 }
 
 .body {
@@ -101,7 +100,6 @@ html {
   border: none;
 }
 
-<<<<<<< HEAD:Frontend/src/index.css
 
 .input {
   width: 87.8%;

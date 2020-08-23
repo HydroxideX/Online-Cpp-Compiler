@@ -79,16 +79,10 @@ class Application extends React.Component {
   }
 
 
-  onStop = () => {
-    if(this.state.stopped === false)
-    this.setState({output: 'Process Stopped\n', stopped: true})
-  }
-
 
   buttonFunctions = {
         'onRun': this.onRun,
         'onSave': this.onSave,
-        'onStop': this.onStop,
   };
 
   render() {

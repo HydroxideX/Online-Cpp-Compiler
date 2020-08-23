@@ -10,7 +10,7 @@ class Save extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button style = {{fontSize: "80%" }} onClick={this.handleClick}>
         Save
       </button>
     );

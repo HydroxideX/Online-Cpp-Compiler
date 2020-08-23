@@ -10,7 +10,7 @@ class Run extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button style = {{fontSize: "80%" }} onClick={this.handleClick}>
         Run
       </button>
     );
