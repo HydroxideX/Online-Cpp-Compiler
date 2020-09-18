@@ -1,15 +1,17 @@
+/******************************************************************************
+
+Welcome.
+This is an online compiler for C, C++.
+Code, Compile, Run online from anywhere in world.
+
+*******************************************************************************/
 #include <iostream>
 
 using namespace std;
 
-int multiply(int x, int y) {
-  return x * y;
-}
-
 int main()
 {
-    int n, m;
-    cin>>n>>m;
-    cout<<multiply(n, m)<<"\n";
+    cout<<"Hello World!\n";
+cout<<"Hello World!2\n";
     return 0;
 }

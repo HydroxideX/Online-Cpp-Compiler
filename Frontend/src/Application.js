@@ -26,18 +26,18 @@ class Application extends React.Component {
     })
   }
 
-
-  onRun = () => {
-    this.sendInputAndCode().then(this.getOutput())
+  onRun =() => {
+    this.startSending(this.getOutput);
   }
 
-  sendInputAndCode = () => {
-        return Promise.all([this.sendCode(), this.sendInput()])
+  startSending = async(getoutput) => {
+    await this.sendCode().then(this.sendInput());
+    getoutput();
   }
 
-  sendCode = () => {
-    this.setState({output: 'Running ...\n', stopped:false})
-    fetch('http://127.0.0.1:8000/api/code/', {
+  sendCode = async() => {
+    await this.setState({output: 'Running ...\n', stopped:false})
+    await fetch('http://127.0.0.1:8000/api/code/', {
       method:'POST',
       headers:{
         'Content-type':'application/json',
@@ -45,8 +45,8 @@ class Application extends React.Component {
       body:JSON.stringify({"content":this.state.code})
     });
   }
-  sendInput = () => {
-    fetch('http://127.0.0.1:8000/api/input/', {
+  sendInput = async () => {
+    await fetch('http://127.0.0.1:8000/api/input/', {
       method:'POST',
       headers:{
         'Content-type':'application/json',
